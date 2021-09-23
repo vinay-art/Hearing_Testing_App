@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FTone</string>
+    <string-array name="option1">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="option2">
+        <item>Prev hearing loss history</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>

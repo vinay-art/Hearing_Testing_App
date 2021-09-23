@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".register">
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/round"
+        android:cursorVisible="true"
+        android:hint="Name"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/round"
+        android:hint="Age"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Spinner
+        android:id="@+id/editGender"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/round"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAge"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/editHearing"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/round"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGender" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="144dp"
+        android:backgroundTint="#964B00"
+        android:text="Submit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHearing" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="133dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ft" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

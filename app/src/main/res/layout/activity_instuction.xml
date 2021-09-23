@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".instuction">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:rotation="0"
+        android:text=" Instructions:"
+        android:textColor="@color/Brown"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="122dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="6dp"
+        android:gravity="start"
+        android:text="Next >"
+        android:textColor="@color/Brown"
+        android:textSize="23sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/Brown"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="403dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="5sp"
+        android:text="1. Plug in your earphone in both ears before starting test.\n2. Click on left button when sound buzzes in left ear.\n3. Click on right button when sound buzzes in right ear.\n4. Do not click on any button if you do not hear any sound.\n5. Do not remove your earphone until the test ends."
+        android:textAlignment="textStart"
+        android:textColor="@color/Brown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head" />
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="232dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="79dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/n6_2_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
